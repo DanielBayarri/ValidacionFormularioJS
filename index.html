@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Validacion de Formulario con JS</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Validación Formulario</h1>
+        <form >
+            <div class="grid">
+                <label for="fisrtname">
+                    First name
+                    <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+                </label>
+                <label for="email">
+                    Email adress
+                    <input  type="email" id="email" name="email" placeholder="Email adress" required>
+                </label>
+            </div>
+
+            <label for="message">
+                Message
+                <textarea class="message" type="text" id="message" name="message" placeholder="Message" required></textarea>
+            </label>
+
+            <div class="grid">
+                <button type="submit">Submit</button>
+                <button type="reset" class="outline">Reset</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
